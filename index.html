@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="staging/images/fav.png" type="image/x-icon">
+    <title>Assignment</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link rel="preload" as="image" href="logo.png"> -->
+    <link rel="preload" media="screen and (min-width:768px)" as="image" href="staging\images\bannerimage.webp">
+
+    <link rel="preload" media="screen and (max-width:768px)" as="image" href="staging\images\m-banneriimage.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="staging/style.css">
+</head>
+
+<body>
+
+
+    <div class="" style="position:fixed ;width:100%;z-index: 2;">
+        <nav class="navbar navbar-expand-lg navbar-light py-0 bg-light">
+            <div class="container">
+                <div class="nav-img">
+                    <img src="staging/images/logo.png" alt="" class="py-2">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse w-50" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100 ms-4 ms-md-0 fw-bold">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#contact"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="banner pos-relative pt-2 pt-md-0 pb-5">
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="staging\images\banner1.jpg"
+                            style="width:100%;height: 100vh;object-fit:cover;">
+                        <source media="(max-width:768px)" class="w-100" srcset="staging\images\banner1.jpg"
+                            style="width:100%">
+                        <img src="staging\images\banner1.jpg" class="img-fluid" alt="..."
+                            style="width:100%; height: 100vh;object-fit:cover">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="staging\images\banner1.jpg"
+                            style="width:100%;height: 100vh;object-fit:cover;">
+                        <source media="(max-width:768px)" class="w-100" srcset="staging\images\banner1.jpg"
+                            style="width:100%">
+                        <img src="staging\images\banner1.jpg" class="img-fluid" alt="..."
+                            style="width:100%; height: 100vh;object-fit:cover">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="staging\images\banner1.jpg"
+                            style="width:100%;height: 100vh;object-fit:cover;">
+                        <source media="(max-width:768px)" class="w-100" srcset="staging\images\banner1.jpg"
+                            style="width:100%">
+                        <img src="staging\images\banner1.jpg" class="img-fluid" alt="..."
+                            style="width:100%; height: 100vh;object-fit:cover">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="staging\images\banner1.jpg"
+                            style="width:100%;height: 100vh;object-fit:cover;">
+                        <source media="(max-width:768px)" class="w-100" srcset="staging\images\banner1.jpg"
+                            style="width:100%; ">
+                        <img src="staging\images\banner1.jpg" class="img-fluid" alt="..."
+                            style="width:100%; height: 100vh;object-fit:cover">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="staging\images\banner1.jpg"
+                            style="width:100%;height: 100vh;object-fit:cover;">
+                        <source media="(max-width:768px)" class="w-100" srcset="staging\images\banner1.jpg"
+                            style="width:100%">
+                        <img src="staging\images\banner1.jpg" class="img-fluid" alt="..."
+                            style="width:100%; height: 100vh;object-fit:cover">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="staging\images\banner1.jpg"
+                            style="width:100%;height: 100vh;object-fit:cover;">
+                        <source media="(max-width:768px)" class="w-100" srcset="staging\images\banner1.jpg"
+                            style="width:100%">
+                        <img src="staging\images\banner1.jpg" class="img-fluid" alt="..."
+                            style="width:100%; height: 100vh;object-fit:cover">
+                    </picture>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" style="background-color: #263369;" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" style="background-color: #263369;" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="banner-cont p-3 text-center ">
+
+            <h3 class="text-start">
+                HEADING COMES HERE
+            </h3>
+
+            <p class="cont text-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam consectetur, similique
+                repellendus architecto atque cum iusto, doloremque est placeat, excepturi tempora! Dolorum incidunt
+                distinctio vitae facere nemo voluptates tenetur?
+            </p>
+
+            <a href="" class="d-block text-start"> LEARN MORE</a>
+
+        </div>
+
+    </section>
+
+
+    <section class="poss-rell pt-2 pt-md-0 pb-5 mb-lg-5">
+        <img src="staging\images\bg-lines.png" class="line-img" alt="">
+        <div class="container">
+            <p class="heading1 cm-col">
+                Company at a glance
+            </p>
+            <div class="row px-md-5 d-flex justify-content-center">
+                <!-- <div class="col-lg-1 d-none d-md-block"></div> -->
+                <div class="col-lg-4">
+                    <img src="staging\images\Screenshot 2023-12-12 094250.png" class="glnc-img" alt="">
+                    <p class="gcont">
+                        World Class <br>
+                        Environmental Performance
+                    </p>
+                </div>
+                <div class="col-lg-4 mid-crd">
+
+                    <img src="staging/images/Screenshot 2023-12-12 094234.png" class="glnc-img " alt="">
+
+                    <p class="gcont">
+                        No.1 in Paper <br>
+                        & Paperboards
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="staging\images\Screenshot 2023-12-12 094250.png" class="glnc-img" alt="">
+                    <p class="gcont">
+                        World Class <br>
+                        Environmental Performance
+                    </p>
+                </div>
+                <!-- <div class="col-lg-1 d-none d-md-block"></div> -->
+            </div>
+        </div>
+        <img src="staging\images\bg-lines.png" class="line-img2" alt="">
+    </section>
+
+
+    <section class="pt-2 pt-md-5 pb-5 pos-rela">
+        <div class="our-prod">
+            <p class="heading1 cm-col text-white">
+                OUR NEW PRODUCTS
+            </p>
+        </div>
+        <div class="container">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-4">
+                    <div class="cardd">
+                        <img src="staging\images\Screenshot 2023-12-12 094312.png" class="produ-img" alt="">
+
+                        <h5 class="mt-4">
+                            FILO SERIES
+                        </h5>
+                        <p class="gcont">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+                    <div class="cardd">
+                        <img src="staging\images\Screenshot 2023-12-12 094319.png" class="produ-img" alt="">
+
+                        <h5 class="mt-4">
+                            FILO SERIES
+                        </h5>
+                        <p class="gcont">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+                    <div class="cardd">
+                        <img src="staging\images\Screenshot 2023-12-12 094328.png" class="produ-img" alt="">
+
+                        <h5 class="mt-4">
+                            FILO SERIES
+                        </h5>
+                        <p class="gcont">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="" class="link"> view more</a>
+
+        </div>
+    </section>
+
+    <section class="pt-2 pt-md-0 pb-5">
+        <div>
+            <p class="heading1 cm-col">
+                OUR NEW PRODUCTS
+            </p>
+        </div>
+        <div class="container">
+            <div class="swiper pb-3" id="swiper_amenities">
+                <div class="swiper-wrapper text-dark bg-light">
+                    <div class="swiper-slide py-0">
+                        <div class="cardd2">
+                            <img src="staging\images\Screenshot 2023-12-12 094342.png" class="" alt="">
+
+                            <h5 class="mt-4 ps-3 text-start">
+                                FILO SERIES
+                            </h5>
+                            <div class="pt-4 pb-2 text-start ">
+                                <a href="" style="text-decoration: none;" class="ps-3">Read More..</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cardd2">
+                            <img src="staging\images\Screenshot 2023-12-12 094342.png" class="" alt="">
+
+                            <h5 class="mt-4 ps-3 text-start">
+                                FILO SERIES
+                            </h5>
+                            <div class="pt-4 pb-2 text-start ">
+                                <a href="" style="text-decoration: none;" class="ps-3">Read More..</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cardd2">
+                            <img src="staging\images\Screenshot 2023-12-12 094342.png" class="" alt="">
+
+                            <h5 class="mt-4 ps-3">
+                                FILO SERIES
+                            </h5>
+                            <div class="pt-4 pb-2 text-start ">
+                                <a href="" style="text-decoration: none;" class="ps-3">Read More..</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cardd2">
+                            <img src="staging\images\Screenshot 2023-12-12 094342.png" class="" alt="">
+
+                            <h5 class="mt-4 ps-3">
+                                FILO SERIES
+                            </h5>
+                            <div class="pt-4 pb-2 text-start ">
+                                <a href="" style="text-decoration: none;" class="ps-3">Read More..</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cardd2">
+                            <img src="staging\images\Screenshot 2023-12-12 094342.png" class="" alt="">
+
+                            <h5 class="mt-4 ps-3">
+                                FILO SERIES
+                            </h5>
+                            <div class="pt-4 pb-2 text-start ">
+                                <a href="" style="text-decoration: none;" class="ps-3">Read More..</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cardd2">
+                            <img src="staging\images\Screenshot 2023-12-12 094342.png" class="" alt="">
+
+                            <h5 class="mt-4 ps-3">
+                                FILO SERIES
+                            </h5>
+                            <div class="pt-4 pb-2 text-start ">
+                                <a href="" style="text-decoration: none;" class="ps-3">Read More..</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"> <i class="fa-solid fa-arrow-right arrw1 "></i></div>
+                <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left arrw1"></i></div>
+                <div class="swiper-pagination swbtn1 mt-4"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <section class="cm-bg pt-2 pt-md-0 pb-5">
+        <div>
+            <p class="heading1 cm-col text-white">
+                IN FOCUS
+            </p>
+        </div>
+        <div class="container">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-4">
+
+                    <img src="staging\images\Screenshot 2023-12-12 094359.png" class=" info-img" alt="">
+                </div>
+
+                <div class="col-lg-4 ">
+
+                    <img src="staging\images\Screenshot 2023-12-12 094407.png" class=" info-img" alt="">
+                </div>
+
+                <div class="col-lg-4 ">
+
+                    <img src="staging\images\Screenshot 2023-12-12 094359.png" class=" info-img" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="pt-2 pt-md-0 pb-5">
+        <div>
+            <p class="heading1 cm-col">
+                HOW WE GROW A SUSTAINABLE FUTURE
+            </p>
+        </div>
+        <div class="container">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 mb-4 mb-md-0">
+
+                    <img src="staging\images\Screenshot 2023-12-12 094414.png" class=" info-img px-0 " alt="">
+
+
+                </div>
+                <div class="col-lg-3 mb-4 mb-md-0">
+                    <div class="fut-sec">
+
+                        <img src="staging\images\Screenshot 2023-12-12 094425.png" class=" w-100" alt="">
+                        <h4 class="h5 pt-5">
+                            Sustainability <br>
+                            Report
+                        </h4>
+                        <p class="fnts d-flex justify-content-between align-items-end pb-3">
+                            Download the latest <br>
+                            report <i class="fa-solid fa-arrow-right arrw "></i>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="fut-sec">
+                        <h4 class="h5 pt-3">
+                            Sustainability <br>
+                            Report
+                        </h4>
+                        <p class="fnts d-flex justify-content-between align-items-end pb-4">
+                            Download the latest <br>
+                            report <i class="fa-solid fa-arrow-right arrw"></i>
+
+                        </p>
+
+                        <img src="staging\images\Screenshot 2023-12-12 094425.png" class=" w-100" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="pt-2 pt-md-0 pb-5">
+        <div>
+            <p class="heading1 cm-col ">
+                GROUP SITES
+            </p>
+        </div>
+        <div class="container">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-3 col-6">
+
+                    <img src="staging\images\Screenshot 2023-12-12 094438.png" class=" info-img" alt="">
+                    <p class="subtxt">
+                        PORTAL
+                    </p>
+                </div>
+                <div class="col-lg-3 col-6 ">
+
+                    <img src="staging\images\Screenshot 2023-12-12 094445.png" class=" info-img" alt="">
+                    <p class="subtxt">
+                        DEALER ZONE
+                    </p>
+                </div>
+                <div class="col-lg-3 col-6 ">
+
+                    <img src="staging\images\Screenshot 2023-12-12 094438.png" class=" info-img" alt="">
+                    <p class="subtxt">
+                        SUPPLIER ZONE
+                    </p>
+                </div>
+                <div class="col-lg-3 col-6 ">
+
+                    <img src="staging\images\Screenshot 2023-12-12 094445.png" class=" info-img" alt="">
+                    <p class="subtxt">
+                        PAPYRA
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- <img src="interview-1.png" alt=""> -->
+    <section class="container sec22 py-5">
+        <div class="sec1">
+            <p class="subbh">
+                DIDN'T FIND WHAT YOU'RE LOOKING FOR?
+            </p>
+
+            <p>
+                Whether you're looking for answers, would like to solve a problem,
+                or just want to let us know how we did, you'll find many ways to contact us right here.
+            </p>
+        </div>
+        <div class="sec2">
+            <a href="" class="enqnow" type="button" data-bs-toggle="modal" data-bs-target="#enquire_form_popup">Enquire
+                Now <i class="fa-solid fa-arrow-right ps-4"></i></a>
+        </div>
+    </section>
+
+
+    <section class="pt-2 pt-md-0 pb-5">
+        <div class="container">
+            <p class="subbh1 ps-3">
+                QUICK LINKS
+            </p>
+
+            <div class="row">
+                <div class="col-lg-3 col-6">
+                    <p> <a href="" class="qklnk"> <i class="fa-solid fa-play"></i> About Us</a></p>
+                    <p> <a href="" class="qklnk"> <i class="fa-solid fa-play"></i> Products</a></p>
+                    <p> <a href="" class="qklnk"> <i class="fa-solid fa-play"></i> Plastic Substituition Products</a>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <p> <a href="" class="qklnk"> <i class="fa-solid fa-play"></i>FSC@</a></p>
+                    <p> <a href="" class="qklnk"> <i class="fa-solid fa-play"></i> Decor Papers
+                        </a></p>
+                    <p> <a href="" class="qklnk"> <i class="fa-solid fa-play"></i>Resources</a></p>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <p> <a href="" class="qklnk"> <i class="fa-solid fa-play"></i> Plantations</a></p>
+                    <p> <a href="" class="qklnk"> <i class="fa-solid fa-play"></i> Sustainability</a></p>
+                    <p> <a href="" class="qklnk"> <i class="fa-solid fa-play"></i> Innovations</a></p>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <p> <a href="" class="qklnk"> <i class="fa-solid fa-play"></i> Careers</a></p>
+                    <p> <a href="" class="qklnk"> <i class="fa-solid fa-play"></i>
+                            Convert it Tool</a></p>
+                    <p> <a href="" class="qklnk"> <i class="fa-solid fa-play"></i> Contact Us</a></p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+    <footer class="text-center py-5" style="background-color:#f3f3f3 ;">
+        <p class="subbh">
+            DIDN'T FIND WHAT YOU'RE LOOKING FOR?
+        </p>
+
+        <h5>
+            COMPANY NAME COMES HERE
+        </h5>
+
+        <p class="cont-info">India Ph: +91-33-22889371 | Corporate Identity Number: L16005WB1910PLC001985
+        </p>
+
+        <p class="cont-info">
+            Disclaimer I Privacy Policy
+        </p>
+
+    </footer>
+
+    <!-- popup -->
+
+    <div class="modal fade" id="enquire_form_popup" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="popupform">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="exampleModalLabel" style="padding-left:25% ;">ENQUIRY NOW
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class=" pb-4" style="width:100%;">
+                        <form action="" id="popup-form">
+                            <div id="popup-note"></div>
+                            <div class="text-center px-2 row">
+                                <div class="col-6">
+                                    <input type="text" class="form-control mt-3 py-2" id="name3" name="name"
+                                        placeholder="Name">
+                                </div>
+                                <div class="col-6">
+                                    <input type="email" class="form-control mt-3 py-2" id="email3" name="email"
+                                        placeholder="Email">
+                                </div>
+                                <div class="col-12">
+                                    <input type="tel" class="form-control mt-3 py-2" id="mobile3" name="mobile"
+                                        placeholder="Mobile">
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" id="message3" cols="30" rows="2" placeholder="Message"
+                                        class="form-control mt-3 py-2"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" id="popup-btn" class="btn btn-light mt-3 w-100 commonbg1"
+                                        style="background-color: #e5941f;opacity: .8;">Submit</button>
+                                </div>
+
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sticky enquire -->
+
+    <button type="button" class="rightbtn" data-bs-toggle="modal" data-bs-target="#enquire_form_popup">
+        <b> Request For A Sample</b>
+    </button>
+
+    <!-- to top scroll btn -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.0/swiper-bundle.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.0/swiper-bundle.min.js"
+        onload="swiperinit()"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- swiper -->
+
+    <!--swiper style-->
+    <style media="all" type="text/css" media="none" onload="if(media!='all')media='all'">
+        .swiper {
+            width: 100%;
+            height: 100%
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 50%;
+            object-fit: cover
+        }
+
+        .swbtn1 {
+            top: 80% !important
+        }
+
+        .swbtn2 {
+            top: 94% !important
+        }
+
+        .sw-pr {
+            color: #fff;
+            top: 30% !important;
+            margin-left: 0 !important
+        }
+
+        .sw-nx {
+            color: #fff;
+            top: 30% !important;
+            margin-left: 100% !important
+        }
+
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: white !important;
+        }
+
+        .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+            margin-top: 3% !important;
+            /* margin-bottom: 5% !important; */
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 1.5rem !important
+        }
+
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            right: 0 !important;
+            width: 2%
+        }
+
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            left: 0 !important;
+            width: 2%
+        }
+
+        .swiper-pagination-bullet {
+            border-radius: 0 !important;
+            width: .7rem;
+            height: .2rem;
+            background-color: black !important;
+
+        }
+
+
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+            content: '' !important;
+        }
+
+        .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+            content: '' !important;
+        }
+
+    </style>
+    <script>
+
+        /*form_popup*/
+        // setTimeout(function () {
+        //     $(function () {
+        //         $("#enquire_form_popup").modal('show');
+        //     });
+        // }, 5000);
+
+        function swiperinit() {
+            if (window.innerWidth < 760) {
+                var swiper = new Swiper("#swiper_amenities", {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            } else {
+                var swiper = new Swiper("#swiper_amenities", {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    loop: false,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            }
+        }
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
