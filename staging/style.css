@@ -129,6 +129,13 @@ body {
     background-color: #f3f3f3;
     text-align: center;
     padding: 20px;
+    transition: transform .2s; 
+
+}
+
+.cardd:hover{
+
+    transform: scale(1.2);
 
 }
 
@@ -164,6 +171,8 @@ body {
     display: block;
     margin: 0% auto;
 }
+
+
 
 .h5 {
     border-bottom: 2px solid #263369;
@@ -428,3 +437,4 @@ body {
     }
 
 }
+
